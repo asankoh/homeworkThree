@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: GillSansReg;
+  src: url(fonts/GillSans.ttc);
+}
+
+@font-face {
+  font-family: GillSansB;
+  src: url(fonts/GillSansBold.otf);
+}
+
+@font-face {
+  font-family: GillSansI;
+  src: url(fonts/GillSansItalic.otf);
+}
+
+@font-face {
+  font-family: GillSansBI;
+  src: url(fonts/GillSansBoldItalic.otf);
+}
+@font-face {
+  font-family: PTSerif;
+  src: url(fonts/PTSerif-Regular.ttc);
+}
+
+@font-face {
+  font-family: PTSerif-I;
+  src: url(fonts/PTSerif-Italic.ttf);
+}
+
+@font-face {
+  font-family: PTSerif-BI;
+  src: url(fonts/PTSerif-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: PTSerif-B;
+  src: url(fonts/PTSerif-Bold.ttf);
+}

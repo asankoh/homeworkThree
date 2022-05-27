@@ -1,0 +1,118 @@
+footer{
+    height: 455px;
+    background-color: #ee4367;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+    
+    .footer-content{
+        width: 400px;
+        text-align: center;
+        font-family: GillSansReg;
+
+        .logo{
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+            width: 92px;
+            height: 42px;
+            border: solid 2px #fff ;
+            
+            // Since span is the child of logo, if we are going to use a position on span, we would need to use it on the logo as well. Inheritly, positions are relative.
+            span{
+                color: #fff;
+                font-family: GillSansReg;
+                font-size: 20px;
+            
+                //Positioning the span to absolute allows you to move the object from top to bottom
+                
+                
+            }
+            
+        }
+
+    h2{
+        color: #fff;
+        font-size: 16px;
+        padding-top: 50px;
+    }
+
+    .number{
+        color: #fff;
+        font-size: 16px;
+        margin-top: -10px;
+    }
+
+    .email{
+        color: #fff;
+        font-size: 16px;
+        margin-top: -10px;
+
+    }
+
+    .copyright{
+        color: #fff;
+        font-size: 16px;
+
+    }
+
+    i {
+        color: #fff;
+        font-size: 30px;
+        padding: 15px;
+    }
+
+
+}
+    
+
+
+.signup{
+            height: 60px;
+            display: flex;
+            
+        
+    
+    input{
+        width: 529px;
+        height: 100%;
+        background-color: #f56b88;
+        border: none;
+        color: rgba(238, 67, 103, .8);
+        font-size: 16px;
+        padding-left: 15px;
+    }
+
+    ::placeholder{
+        color: rgba(238, 67, 103, 1);
+
+    }
+    .button{
+        height: 100%;
+        width: 167px;
+        background-color: #fff;
+        color: #ee4367;
+
+    }
+
+    }
+
+}
+
+
+
+    @media (max-width: 800px) {
+        .footer-content{
+            font-size: 15px;
+            margin: 0 auto;
+        }
+        .logo{
+            .span{
+            margin: 0 auto;
+            }
+            .signup{
+                margin: 0 auto;
+            }
+        }
+    }

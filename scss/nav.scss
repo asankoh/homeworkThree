@@ -1,0 +1,78 @@
+.nav-wrapper{
+height: 90px;
+width: 100%;
+position: fixed;
+
+
+
+
+nav{
+    max-width: 980px;
+    height: 90px;
+    margin: 0 auto;
+    
+    // Since using a position fixed removes the effects of margin 0 auto, in order to maintain that centered position, use left 50% and transform: translate (-50%, 0).
+    
+    border-bottom: solid 2px white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+    .logo{
+    position: relative;
+    width: 92px;
+    height: 42px;
+    border: solid 2px #fff ;
+    
+    // Since span is the child of logo, if we are going to use a position on span, we would need to use it on the logo as well. Inheritly, positions are relative.
+    span{
+        position: absolute;
+        bottom: -5px;
+        color: #fff;
+        font-family: GillSansReg;
+    
+        //Positioning the span to absolute allows you to move the object from top to bottom
+    
+    }
+    }
+    .links {
+        width: 350px;
+        display: flex;
+        justify-content: space-around;
+    
+    
+        a{
+            text-decoration: none;
+            color: #fff;
+            font-family: GillSansReg;
+            
+        }
+    
+        span{
+            color: #EE4367;
+        }
+    }
+    }
+}
+
+@media only all and (max-width: 980px){
+    .nav-wrapper {
+        nav{
+            padding: 0 30px;
+
+            
+        }
+    }
+}
+
+
+@media only all and (max-width: 980px){
+    .nav-wrapper {
+        nav{
+            padding: 0 30px;
+
+            
+        }
+    }
+}

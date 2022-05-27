@@ -1,0 +1,71 @@
+.upcoming-events{
+    background-color: #540d62;
+    color: #fff;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 40px;
+
+    // Using display flex alone gets rid of the events box. This is because since there is two children (.title and h1,  it places the two children side by side. Plus since there isn't a width, it removes the events box. To make sure that it comes out up and down, use flex-direction: column and justify-content: space-around to space it equally.
+
+.title{
+    height: 35px;
+    width: 392px;
+    border-bottom: solid 2px #fff;
+    padding-bottom: 40px;
+
+    h1{
+        font-size: 28px;
+    }
+    
+
+}
+
+.events{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+
+
+.event{
+    width: 210px;
+    height: 124px;
+    display: flex;
+    justify-content: space-between;
+
+.date{
+    width: 60px;
+    height: 60px;
+    background-color: #ee4367;
+    display: flex;
+    flex-direction: column;
+    }
+
+.event-detail{
+    font-family: GillSansReg;
+    font-size: 13px;
+    width: 140px;
+            
+    .details{
+        color: #ee4367;
+
+    }
+    }
+    }
+}
+
+}
+
+
+@media (max-width: 1140px) {
+    .upcoming-events{
+        .events{
+            flex-wrap: wrap;
+            font-size: 10px;
+            
+            .event{
+            }
+        }
+    }
+}
+
+
