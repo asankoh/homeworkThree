@@ -14,8 +14,34 @@
             height: 450px;
             background-color: rgb(230, 230, 230);
             border-radius: 20px;
+            padding: 70px 20px 0px 20px;
+        }
+
+        h2{
+            font-family: GillsBold;
+        }
+
+        i{
+            font-size: 48px;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 20px;
+            
         }
 
 
+
+
     }
+}
+
+@media only all and (max-width: 980px){
+    .service{
+        .flex-container{
+            .serviceOne, .serviceTwo, .serviceThree{
+                font-size: 14px;
+                overflow: hidden;
+        }
+    }
+}
 }
