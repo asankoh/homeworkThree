@@ -1,0 +1,65 @@
+.staffContent{
+    background-color:rgb(240, 240, 240);
+    padding: 70px;
+
+    h2{
+        font-family: GillsBold;
+        font-size: 32px;
+        text-align: center;
+        padding-bottom: 10px;
+        letter-spacing: 1px;
+        text-decoration: underline;
+    }
+
+    .rowOne{
+        display: flex;
+        margin: 60px auto;
+        justify-content: space-evenly;
+        text-align: center;
+
+        .staff{     
+
+            h4{
+                color: rgb(10, 75, 200);
+                padding-top: 15px;
+                letter-spacing: 1px;
+            }
+
+            .title{
+                font-family: GillsReg;
+                margin-top: 5px;
+            }
+
+            img{
+                border-radius: 5px;
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+
+    .rowTwo{
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+
+        .staff{ 
+
+            h4{
+                color: rgb(10, 75, 200);
+                padding-top: 15px;
+                letter-spacing: 1px;            
+            }  
+            
+            .title{
+                font-family: GillsReg;
+                margin-top: 5px;
+            }
+            img{
+                border-radius: 5px;
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+}

@@ -1,0 +1,67 @@
+.content{
+    height: 950px;
+
+    .flex-container{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+
+        .boxOne, .boxTwo, .boxThree{
+            height: 400px;
+            max-width: 600px;
+            padding-top: 100px;
+            padding-left: 20px;
+        }
+
+        h3 {
+            color: white;
+            font-family: GillsBold;
+            font-size: 24px;
+        }
+
+        p{
+            color: white;
+            font-family: GillsReg;
+        }
+
+        .boxOne{
+            background-color: maroon;
+        }
+        .boxTwo{
+            background-color: darkblue;
+        }
+        .boxThree{
+            background-color: rgb(30, 30, 30);
+        }
+    }
+
+    .text-box{
+        max-width: 1200px;
+        height: 300px;
+        background-color: rgb(200, 200, 200);
+        margin: 90px auto;
+        text-align: start;
+
+        h2{
+            padding-top: 50px;
+            font-size: 36px;
+            font-family: GillsBold;
+        }
+
+        p{
+            font-size: 18px;
+            font-family: GillsReg;
+        }
+    }
+}
+
+@media only all and (max-width: 980px){
+    .content{
+        .flex-container{
+            .boxOne, .boxTwo, .boxThree{
+                font-size: 14px;
+                overflow: hidden;
+        }
+    }
+}
+}

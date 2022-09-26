@@ -1,0 +1,21 @@
+.service{
+    height: 600px;
+
+    .flex-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+        margin: 60px auto;
+
+
+        .serviceOne, .serviceTwo, .serviceThree{
+            width: 350px;
+            height: 450px;
+            background-color: rgb(230, 230, 230);
+            border-radius: 20px;
+        }
+
+
+    }
+}

@@ -1,0 +1,330 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: GillsBold;
+  src: url(../css/fonts/GillSansBold.otf);
+}
+@font-face {
+  font-family: PTBold;
+  src: url(../css/fonts/PTSerif-Bold.ttf);
+}
+@font-face {
+  font-family: PTReg;
+  src: url(../css/fonts/PTSerif-Regular.ttf);
+}
+@font-face {
+  font-family: GillsReg;
+  src: url(../css/fonts/GillSans.ttc);
+}
+nav {
+  height: 50px;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+  font-family: GillsReg;
+  background-color: rgb(30, 30, 30);
+}
+nav .logo {
+  width: auto;
+  height: 50px;
+  margin-left: 10px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0 40px;
+  position: relative;
+}
+nav a:hover {
+  color: blue;
+}
+nav a:after {
+  content: "";
+  position: absolute;
+  background-color: blue;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+nav a:hover:after {
+  width: 100%;
+}
+
+@media only all and (max-width: 980px) {
+  nav {
+    padding: 0 30px;
+  }
+  nav a {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+.hero {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, rgba(0, 1, 1, 0.6), rgba(0, 0, 1, 0.6)), url(../img/businessHero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.hero .text-container h2 {
+  font-size: 48px;
+  color: white;
+  font-family: GillsBold;
+  text-align: center;
+}
+.hero .text-container p {
+  width: 1200px;
+  color: white;
+  font-size: 16px;
+  font-family: GillsReg;
+}
+
+@media only all and (max-width: 980px) {
+  .hero .text-container h2, .hero .text-container p {
+    padding: 10px;
+    width: 500px;
+    margin: 0 auto;
+  }
+}
+.content {
+  height: 950px;
+}
+.content .flex-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.content .flex-container .boxOne, .content .flex-container .boxTwo, .content .flex-container .boxThree {
+  height: 400px;
+  max-width: 600px;
+  padding-top: 100px;
+  padding-left: 20px;
+}
+.content .flex-container h3 {
+  color: white;
+  font-family: GillsBold;
+  font-size: 24px;
+}
+.content .flex-container p {
+  color: white;
+  font-family: GillsReg;
+}
+.content .flex-container .boxOne {
+  background-color: maroon;
+}
+.content .flex-container .boxTwo {
+  background-color: darkblue;
+}
+.content .flex-container .boxThree {
+  background-color: rgb(30, 30, 30);
+}
+.content .text-box {
+  max-width: 1200px;
+  height: 300px;
+  background-color: rgb(200, 200, 200);
+  margin: 90px auto;
+  text-align: start;
+}
+.content .text-box h2 {
+  padding-top: 50px;
+  font-size: 36px;
+  font-family: GillsBold;
+}
+.content .text-box p {
+  font-size: 18px;
+  font-family: GillsReg;
+}
+
+@media only all and (max-width: 980px) {
+  .content .flex-container .boxOne, .content .flex-container .boxTwo, .content .flex-container .boxThree {
+    font-size: 14px;
+    overflow: hidden;
+  }
+}
+footer {
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(30, 30, 30);
+  text-align: center;
+}
+footer .footer-content {
+  width: 900px;
+}
+footer .footer-content h3 {
+  padding-top: 20px;
+  color: white;
+  font-family: GillsBold;
+}
+footer .footer-content p {
+  color: white;
+  font-family: GillsReg;
+}
+footer .footer-content i {
+  font-size: 24px;
+  color: white;
+  padding: 0 10px;
+}
+
+.aboutContent {
+  max-width: 1200px;
+  height: 400px;
+  margin: 0 auto;
+}
+.aboutContent h2 {
+  font-family: GillsBold;
+  font-size: 32px;
+  text-align: center;
+  padding: 30px;
+  text-decoration: underline;
+}
+.aboutContent .flex-container-two {
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.aboutContent .flex-container-two .textOne, .aboutContent .flex-container-two .textTwo {
+  padding: 15px;
+  width: 600px;
+  height: 250px;
+  font-family: GillsReg;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 1000px) {
+  .aboutContent .flex-container-two .textOne, .aboutContent .flex-container-two .textTwo {
+    font-size: 14px;
+    overflow: hidden;
+  }
+}
+.staffContent {
+  background-color: rgb(240, 240, 240);
+  padding: 70px;
+}
+.staffContent h2 {
+  font-family: GillsBold;
+  font-size: 32px;
+  text-align: center;
+  padding-bottom: 10px;
+  letter-spacing: 1px;
+  text-decoration: underline;
+}
+.staffContent .rowOne {
+  display: flex;
+  margin: 60px auto;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.staffContent .rowOne .staff h4 {
+  color: rgb(10, 75, 200);
+  padding-top: 15px;
+  letter-spacing: 1px;
+}
+.staffContent .rowOne .staff .title {
+  font-family: GillsReg;
+  margin-top: 5px;
+}
+.staffContent .rowOne .staff img {
+  border-radius: 5px;
+  width: 200px;
+  height: 200px;
+}
+.staffContent .rowTwo {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.staffContent .rowTwo .staff h4 {
+  color: rgb(10, 75, 200);
+  padding-top: 15px;
+  letter-spacing: 1px;
+}
+.staffContent .rowTwo .staff .title {
+  font-family: GillsReg;
+  margin-top: 5px;
+}
+.staffContent .rowTwo .staff img {
+  border-radius: 5px;
+  width: 200px;
+  height: 200px;
+}
+
+.service {
+  height: 600px;
+}
+.service .flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  margin: 60px auto;
+}
+.service .flex-container .serviceOne, .service .flex-container .serviceTwo, .service .flex-container .serviceThree {
+  width: 350px;
+  height: 450px;
+  background-color: rgb(230, 230, 230);
+  border-radius: 20px;
+}
+
+.contact-Content {
+  height: 500px;
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-Content .contact {
+  width: 500px;
+  height: 500px;
+  border: 2px solid black;
+}
+.contact-Content .contact h2 {
+  padding-top: 20px;
+  font-family: GillsBold;
+  font-size: 24px;
+  text-align: center;
+}
+.contact-Content .contact .text-field-one {
+  margin: 20px;
+  width: 400px;
+  padding: 10px;
+  outline: none;
+  border: solid 2px #000;
+}
+.contact-Content .messageBox {
+  min-width: 400px;
+  margin: 20px;
+  padding: 10px;
+  height: 120px;
+  border: solid 2px #000;
+}
+.contact-Content .submitBtn {
+  margin: 20px;
+  width: 100px;
+  height: 50px;
+  border-radius: 45px;
+}
+
+/*# sourceMappingURL=styles.css.map */
